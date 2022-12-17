@@ -32,11 +32,8 @@ function getActivePlayerInfo() {
 
 function switchPlayer() {
   for (let i = 0; i < players.length; i++) {
-    if (!players[i].classList.contains('player--active')) {
-      players[i].classList.add('player--active');
-    }
+    players[i].classList.toggle('player--active');
   }
-  activePlayer.classList.remove('player--active');
 }
 
 newBtn.addEventListener('click', function () {
