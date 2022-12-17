@@ -84,7 +84,7 @@ holdBtn.addEventListener('click', function () {
 rollBtn.addEventListener('click', function () {
   if (!winner) {
     diceRoll = Math.floor(Math.random() * 6 + 1);
-    dice.src = `dice-${diceRoll}.png`;
+    dice.src = `images/dice-${diceRoll}.png`;
     getActivePlayerInfo();
     if (dice.classList.contains('hidden')) {
       dice.classList.remove('hidden');
